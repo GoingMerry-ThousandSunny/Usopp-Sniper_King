@@ -1,6 +1,8 @@
 # Design Pattern- Elements of Reusable Object-Oriented Software
 
-> ### "The best designers will use many design patterns that dovetail and intertwine to produce a whole" ### Erich Gamma 
+> ### "The best designers will use many design patterns that dovetail and intertwine to produce a whole"
+> Erich Gamma 
+
 \
 Software design patterns are a huge source of discussion among peers.
 
