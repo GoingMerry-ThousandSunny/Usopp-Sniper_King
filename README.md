@@ -460,15 +460,15 @@ public class Main{
 -----------
 <br>
 
-<br>
-
 ## Conclusion :
 
-Software design pattern help you as a programmer to create robust architecture. But you need to have the right knowledge to use them. 
+Software design pattern help you as a programmer to create robust architecture. 
+But you need to have the right knowledge to use them. 
 
 ## References :
 
 <br>
+
 * https://www.upgrad.com/blog/software-design-patterns/
 <br>
 
