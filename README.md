@@ -99,13 +99,13 @@ public class Circle implements Shape{
 ```
 ```C
 public abstract class ShapeDecorator implements Shape{
-    protected Shape decorateShape;
+    protected Shape decoShape;
     
-    public ShapeDecorator(Shape decorateShape){
-        this.decorateShape=decorateShape;
+    public ShapeDecorator(Shape decoShape){
+        this.decoShape=decoShape;
     }
     public void draw(){
-        decorateShape.draw();
+        decoShape.draw();
     }
     
 }
@@ -113,15 +113,15 @@ public abstract class ShapeDecorator implements Shape{
 ```
 ```C
 public class RedShapeDecorator extends ShapeDecorator{
-    public RedShapeDecorator(Shape decorateShape){
-        super(decorateShape);
+    public RedShapeDecorator(Shape decoShape){
+        super(decoShape);
     }
     @Override
     public void draw(){
         decorateShape.draw();
-        setRedBorder(decorateShape);
+        setRedBorder(decoShape);
     }
-    private void setRedBorder(Shape decorateShape){
+    private void setRedBorder(Shape decoShape){
         System.out.println("Border Color: Red");
     } 
 }
@@ -163,13 +163,11 @@ public class Decorator{
 We want to develop a programmable remote which can be used to turn on and off various items like lights and stereo. 
 
 ```C
-// An interface for command.
 interface Command{
     public void execute();
 }
 ```
 ```C
-// Light class and it's corresponding command classes.
 class Light{
     public void on(){
         System.out.println("Light is on");
@@ -203,7 +201,6 @@ class LightOffCommand implements Command{
 }
 ```
 ```C
-// Stereo and it's command classes.
 class Stereo{
 public void on(){
     System.out.println("Stereo is on);
@@ -270,7 +267,7 @@ class RemoteControl{
         SimpleRemoteControl r= new SimpleRemoteControl();
         Light light= ne Light();
         Stereo stereo= new Stereo();
-        // we can change command dynamically
+        // dynamic input
         r.setCommand(new LightOnCommand(light));
         r.buttonWasPressed();
 
@@ -355,7 +352,7 @@ public class Factory {
             case CYCLE:
                 v= new Cycle();
             default:
-                //throw some exception.
+                //throw exception.
                 break;
         }
         return v;
@@ -382,7 +379,7 @@ It creates multiple dependencies, i.e, defines one-to-many dependency between ob
 <br>
 
 __Example :__
-Message publisher of type __Subject__ with 2 subscribers of type __Observer__, where publisher will publish message and subscribers will print the updated message.
+Message publisher of type __Subject__ with 2 subscribers of type __Observer__, where publisher will publish message and subscribers will print the message.
 <br>
 
 ```C
@@ -445,15 +442,15 @@ public class Main{
         SubscriberOne s1= new SubscriberOne();
         SubscriberTwo s2= new SubscriberTwo();
 
-        MessagePublisher p= new MessagePublisher();
+        MessagePublisher mp= new MessagePublisher();
 
-        p.attach(s1);
-        p.attach(s2);
-        p.notifyUpdate(new Message("First Message")); 
+        mp.attach(s1);
+        mp.attach(s2);
+        mp.notifyUpdate(new Message("First Message")); 
 
-        p.attach(s1);
-        p.attach(s2);
-        p.notifyUpdate(new Message("Second Message"));
+        mp.attach(s1);
+        mp.attach(s2);
+        mp.notifyUpdate(new Message("Second Message"));
     }
 }
 ```
@@ -463,7 +460,7 @@ public class Main{
 ## Conclusion :
 
 Software design pattern help you as a programmer to create robust architecture. 
-But you need to have the right knowledge to use them. 
+For that one need to have the right knowledge about how to use them. 
 
 ## References :
 
