@@ -2,26 +2,22 @@
 
 > ### "The best designers will use many design patterns that dovetail and intertwine to produce a whole" Erich Gamma 
 \
-Software design patterns are huge source of discussion among peers. 
+Software design patterns are a huge source of discussion among peers.
 
-if you want to have a tour just follow along.
-But wait, before we start exploration let's first lear what is design pattern ? 
-## What is Software Design Pattern ?
+Leyt's start our tour, just follow along. But wait, before we start exploration let's first learn what is a design pattern?
+## What is Software Design Pattern?
+They provide a general reusable solution for the common problems that occur in software design. The pattern typically shows relationships and interactions between classes or objects. The idea is to speed up the development process by providing design paradigms.
 
-They provide a general reusable solution for the common problems that occur in software design.The pattern typically shows relationship and interactions between classes or objects.The idea is to speed up the development process by providing design paradigms.
-
-> **_NOTE_** : design pattern represents idea, not a particular implementation.
-
-There are 20+ design patterns divided into 4 groups, but for now I'll be discussing only 5 of them.
+> ### **NOTE** : Design pattern represents idea, not a particular implementation.
 
 So Let's Begin.... 
   
  ## 1. Singleton 
 
-Purpose is to create a single instance.
-Take an example of calendar; it is a software program that can make only one instance of a class and doesn't allow other cases. It uses *__getInstance()__* to get object.
+The purpose is to create a single instance. Take an example of the calendar; it is a software program that can make only one instance of a class and doesn't allow other cases. It use **getInstance()** to get object.
 
-It is used for logging, thread pool,driver objects and caching. 
+
+It's used for logging, thread pool, driver objects, and caching.
  
  ![Singleton pic](https://media.geeksforgeeks.org/wp-content/uploads/SINGLEton.png)
 
@@ -39,7 +35,7 @@ It is used for logging, thread pool,driver objects and caching.
         }
     }
  ```
- > **_NOTE_** : private static final ABC abc= new ABC(), Early instance will be created at load time. 
+ > ### **NOTE** : At private static final ABC abc= new ABC(), Early instance will be created at load time. 
   -----
   <br/>
 
@@ -59,7 +55,7 @@ It is used for logging, thread pool,driver objects and caching.
         }
     }
   ```
-  > **_NOTE_** : At instance= new ABC(), instance will be created at request time.  
+  > ### **NOTE** : At instance= new ABC(), instance will be created at request time.  
   -----
   <br/>
 
@@ -74,7 +70,7 @@ __For example :__
 
 Draw a Shape with red colored borders. 
 
-> **_NOTE_** : The red colored borders doesn't change the object itself, as it's just an add-on on the shape.
+> ### **NOTE** : The red colored borders doesn't change the object itself, as it's just an add-on on the shape.
 <br>
 ```C
 public interface Shape {
@@ -154,7 +150,7 @@ public class Decorator{
 
  ## 3. Command Design Pattern : 
 
- It intends to  __encapsulate all the data required for performing a given action (command) in a object.__
+ It intends to  __encapsulate all the data required for performing a given action (command) in an object.__
 ![Command pic](https://refactoring.guru/images/patterns/content/command/command-en.png?id=80fbadc666cf3b9b1958)
 <br/>
 
@@ -291,8 +287,8 @@ It helps to create an object without the user getting exposed to building logic.
 
 __For example :__
 
-There is an vehicle factory, which produces 2
-types of vehicle, __Car__ and __Cycle__.
+There is a vehicle factory, which produces 2
+types of vehicles, __Car__ and __Cycle__.
 <br>
 
 ```C
@@ -372,14 +368,15 @@ public class TestFactory {
 
 ## 5. Observer Pattern
 
-It creates multiple dependencies, i.e, defines one-to-many dependency between objects, so that when object changes state, all it's dependents are notified and updated automatically. 
+It creates multiple dependencies, i.e, defines a one-to-many dependency between objects so that when the object changes state, all its dependents are notified and updated automatically.
+ 
 
 ![Observer Pattern pic](https://2.bp.blogspot.com/-E4ik7Rk3DGk/WlO4DrleVTI/AAAAAAAAAMI/v-L3z8dcta0UPjcxep7Si6efJe_r7HA5ACLcBGAs/s1600/observer.PNG)
 
 <br>
 
 __Example :__
-Message publisher of type __Subject__ with 2 subscribers of type __Observer__, where publisher will publish message and subscribers will print message.
+Message publisher of type __Subject__, with 2 subscribers of type __Observer__, where the publisher will publish message and subscribers will print message.
 <br>
 
 ```C
@@ -460,7 +457,7 @@ public class Main{
 ## Conclusion :
 
 Software design patterns help you as a programmer to create robust architecture. 
-For that one need to have the right knowledge about how to use them. 
+For that you need to have the right knowledge of it's usage.
 
 ## References :
 
