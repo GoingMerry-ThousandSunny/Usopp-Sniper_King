@@ -264,18 +264,18 @@ class SimpleRemoteControl{
 ```C
 class RemoteControl{
     public static void main(String[] args){
-        SimpleRemoteControl r= new SimpleRemoteControl();
+        SimpleRemoteControl rc= new SimpleRemoteControl();
         Light light= ne Light();
         Stereo stereo= new Stereo();
         // dynamic input
-        r.setCommand(new LightOnCommand(light));
-        r.buttonWasPressed();
+        rc.setCommand(new LightOnCommand(light));
+        rc.buttonWasPressed();
 
-        r.setCommand(new StereoOnWithCDCommand(stereo));
-        r.buttonWasPressed();
+        rc.setCommand(new StereoOnWithCDCommand(stereo));
+        rc.buttonWasPressed();
 
-        r.setCommand(new StereoOffWithCDCommand(stereo));
-        r.buttonWasPressed();
+        rc.setCommand(new StereoOffWithCDCommand(stereo));
+        rc.buttonWasPressed();
     }
 }
 ```
@@ -379,7 +379,7 @@ It creates multiple dependencies, i.e, defines one-to-many dependency between ob
 <br>
 
 __Example :__
-Message publisher of type __Subject__ with 2 subscribers of type __Observer__, where publisher will publish message and subscribers will print the message.
+Message publisher of type __Subject__ with 2 subscribers of type __Observer__, where publisher will publish message and subscribers will print message.
 <br>
 
 ```C
@@ -459,7 +459,7 @@ public class Main{
 
 ## Conclusion :
 
-Software design pattern help you as a programmer to create robust architecture. 
+Software design patterns help you as a programmer to create robust architecture. 
 For that one need to have the right knowledge about how to use them. 
 
 ## References :
