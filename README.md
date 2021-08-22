@@ -466,10 +466,9 @@ public class Main{
 
 Software design pattern help you as a programmer to create robust architecture. But you need to have the right knowledge to use them. 
 ---
-<br>
 
 ## References :
 
 <br>
-
+* https://www.upgrad.com/blog/software-design-patterns/
 * https://www.geeksforgeeks.org/software-design-patterns/
